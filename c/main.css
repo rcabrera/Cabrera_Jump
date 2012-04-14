@@ -10,7 +10,7 @@ body{
 	margin:0 auto;
 }
 
-h2, h3, h4, h5, h6{
+h3, h4, h5, h6{
     font-family: helvetica, arial, verdana, sans-serif;
     font-weight: normal;
 	color:#333;
@@ -27,7 +27,14 @@ h1{
 	padding-left:20px;
 }
 
-div	{border:0em solid #ddd; margin-bottom:1em;}
+h2{
+	margin-top:-15px;
+}
+
+
+div{
+	margin-bottom:2em;
+}
 
 #nav{
 	margin-left:180px;
@@ -48,22 +55,25 @@ div	{border:0em solid #ddd; margin-bottom:1em;}
 	padding:5px;
 }
 
+/*--------------------------
+	    CONTENT
+---------------------------*/
+
 #main{
 	margin:0 auto;
 	position:relative;
 	float:left;
-	border:#3F0 solid 1px;
-	width:940px;
-	margin-top:-20px;
-	margin-left:15px;
+	border-left:#5c8bac solid 1px;
+	border-right:#5c8bac solid 1px;
+	width:938px;
+	margin-top:-18px;
+	margin-left:17px;
 	padding-top:30px;
-}
-#main div {
-	
 }
 
 #content{
 	width:40em;
+	position:relative;
 	float:left;
 	padding-top:1.40em;
 	padding-left:20px;
@@ -78,17 +88,75 @@ div	{border:0em solid #ddd; margin-bottom:1em;}
 	
 	
 #content p{padding:0 1.5em 0 0;}
-	
-#content p img	{display:block;width:24em;height:17.5em;background-color:#ccc;float:left;margin:.5em 1em 1em 0;}
+
+#menu{
+	display:block;
+	padding-bottom:50px;	
+}
+
+#menu li {
+	list-style:none;
+	padding-bottom:8px;
+}
+
+#menu a{
+	text-decoration:none;
+	color:#391600;	
+}
+
+#menu a:hover{
+	text-decoration:none;
+	color:#5c8bac;	
+}
+
+#menu_links a{
+	text-decoration:none;
+	color:#391600;	
+}
+
+#menu_links a:hover{	
+	color:#5c8bac;
+}
+
+ 
+/*--------------------------
+	    SideBar
+---------------------------*/
+
+#sidebar{
+	position:relative;
+	float:right;
+	width:21em;
+    font-size:.85em; 
+	line-height:1.52em;
+	padding:3em 1.5em;
+	margin-right:2em;
+	background:#eee;
+}
+ 
+/*--------------------------
+	    FOOTER
+---------------------------*/
+
+#main #footer{
+	position:relative;
+	clear:both;
+	background-color:#aaa;
+	margin:0 auto;
+}
+
+ #footer a{
+	 text-decoration:none;
+	 color:#391600;
+	 padding:15px;
+}
+
+ #footer a:hover{
+	color:#CCC;
+}
 
 
-#sidebar		{float:right;width:21em;font-size:.85em; line-height:1.52em;padding:3em 1.5em;background:#eee;}
-#main #footer	{clear:both;background-color:#aaa;margin:0;}
-
-
-
-/*  about page specific styles  */
-
+/*  about page specific styles  
 #about #content{width:75em; border-width:0;}
 #about #content p span	{display:block;width:20em;height:17.5em;background-color:#ccc;float:left;margin:.5em 1em 1em 0;}
 
@@ -100,6 +168,6 @@ vertical-align:middle;
 	-webkit-box-shadow:1px 1px 10px #000;
 	box-shadow:1px 1px 10px #000;
 	
-}
+}*/
 
 

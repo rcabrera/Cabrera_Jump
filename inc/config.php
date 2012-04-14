@@ -9,6 +9,6 @@ define('SITE_NAME', 'Rosita Cabrera');
 define('CATCH_PHRASE', 'Makes the world go around');
 
 //set master email
-define('EMAIL', 'tbennett@.aii.edu');
+define('EMAIL', 'rographx@bellsouth.net');
 
 ?>

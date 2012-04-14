@@ -1,7 +1,23 @@
 <?php require_once('inc/config.php');?>
 <?php include_once('inc/top.php'); ?>
 
-<?php $input = $_GET['shout']; ?>
+<?php
+//page specific logic here
+
+  $page_name='home';
+  $extra_js='j/extra.js';
+  $extra_css='c/extra.css';
+ 
+	if(isset($_GET['shout']))
+	{
+ 		$input =  $_GET['shout']; 
+	}
+	else
+	{
+		$input = 'git.png';
+	}
+ 
+ ?>
 
 
 <body id="demo">
@@ -12,26 +28,20 @@
 
   <h1>ASSIGNMENTS:</h1>
 
-   <div id="content" class="">
-		<h3>ASSIGNMENTS:</h3>
-		<p>
-		<img src="<?php echo 'i/' . $input; ?>" alt="" />
-		Lorem ipsum dolor sit amet, consectetur adipisicing <a href="index.php?shout=jag.jpg">jag</a> <a href="index.php?shout=jagg.jpg">jaguar</a>
-		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-		nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-		reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-		pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-		culpa qui officia deserunt mollit anim id est laborum.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-		nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-		reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-		pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-		culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-	</div>
+   <div id="content">
+	 <p>
+		<img src="<?php echo 'i/' . $input; ?>" alt="" align="left"/>
+		GitHub is a web-based hosting service for software development projects that use the Git revision control system. Our class will be using this repository to help us code and save our php files. GitHub has grown into an application used by over a million people to store over two million code repositories. GitHub is one of the largest code host in the world.		
+	 </p>
+     
+     <ul id="menu">
+     	<li><a href="#">Assignment 1: Jump Page</a> Due 4/11/2012</li>
+        <li><a href="#">Assignment 2: Research Article</a> Due 5/08/2012</li>
+        <li><a href="#">Assignment 3: Site Map,Wireframes, &amp; DB Structure</a> Due 5/15/2012</li>
+        <li><a href="#">Assignment 4: Web Application</a> Due 6/06/2012</li>
+     </ul>
+     
+  </div>
 
 	
 	<?php include_once('inc/sidebar.php'); ?>
