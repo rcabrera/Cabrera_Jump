@@ -80,11 +80,9 @@ div{
 	margin-left:20px;
 	border-right:1px solid #ddd;
 	background-color:#edf0f2;
-
-	vertical-align:middle;
-	-moz-box-shadow:1px 1px 10px #000;
-	-webkit-box-shadow:1px 1px 10px #000;
-	box-shadow:1px 1px 10px #000;}
+    vertical-align:middle;
+	border:outset;
+}
 	
 	
 #content p{padding:0 1.5em 0 0;}
@@ -163,10 +161,6 @@ div{
 #about #content div{
 display:block;width:20em;float:left;margin:.5em 2em 1em 2em;
 background-color:#9CC;
-vertical-align:middle;
-	-moz-box-shadow:1px 1px 10px #000;
-	-webkit-box-shadow:1px 1px 10px #000;
-	box-shadow:1px 1px 10px #000;
 	
 }*/
 
